@@ -14,10 +14,10 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v2
         with:
-          go-version: '^1.14'
-    - run: go version
-    - name: Generate docgo
-      run: make godoc
+          go-version: '^1.14.1'
+      - run: go version
+      - name: Generate docgo
+        run: make godoc
 
   github-pages:
     runs-on: ubuntu-latest
